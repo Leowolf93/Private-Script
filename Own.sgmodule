@@ -1,5 +1,13 @@
 [Script]
 type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js
+type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
+type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
+type=http-response,requires-body=1,max-size=0,pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow,script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
+type=http-response,requires-body=1,max-size=0,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
+type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
+type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
+type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
+
 [URL Rewrite]
 ^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
 ^https?:\/\/app\.58\.com\/api\/home\/advertising\/ - reject
@@ -235,35 +243,35 @@ https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSpl
 "^https?://spclient.wg.spotify.com/.+enabled-tracks" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 "^https?://spclient.wg.spotify.com/.+promoted_offer" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 "^https?:\/\/api\d?\.musical\.ly\/api\/ad\/" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/cdn\.\w{3}\.chelaileapp\.cn\/(api\/)?adpub" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.douban\.com\/b.*\/common_ads\?.*" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"https?://res\.xiaojukeji\.com\/resapi\/activity\/mget" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^http?:\/\/business\.msstatic\.com\/advertiser\/material" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"https://api.gotokeep.com/cauchy/user/notice/growth/guide" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api.gotokeep.com/cauchy/growth/init" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.vistopia\.com\.cn\/api\/v\d\/home\/advertisement" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.internetofcity\.cn\/api\/resource\/anon\/popups\/getSplashList" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/api\.internetofcity\.cn\/api\/resource\/anon\/popups\/getList" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/(mobile|shop)\.laichon\.com\/api\/(v1\/goods\/goodsList|exposureAdvStatistics|getWebAdvList)" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryAdImages" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"https:\/\/yanxuan.nosdn.127.net\/.*\.mp4" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/tag\/ads_engage" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/ads\/apple\/record" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/ads\/resource" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/referee\.xiaohongshu\.com\/v\d\/stateReport" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/lchttpapi\.xczim\.com\/1\.1\/functions\/getLaunchImageForIOS" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https:\/\/api\.xiachufang\.com\/v\d\/ad/" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-"^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
+"^https?:\/\/cdn\.\w{3}\.chelaileapp\.cn\/(api\/)?adpub" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.douban\.com\/b.*\/common_ads\?.*" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"https?://res\.xiaojukeji\.com\/resapi\/activity\/mget" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^http?:\/\/business\.msstatic\.com\/advertiser\/material" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"https://api.gotokeep.com/cauchy/user/notice/growth/guide" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api.gotokeep.com/cauchy/growth/init" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.vistopia\.com\.cn\/api\/v\d\/home\/advertisement" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.internetofcity\.cn\/api\/resource\/anon\/popups\/getSplashList" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/api\.internetofcity\.cn\/api\/resource\/anon\/popups\/getList" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/(mobile|shop)\.laichon\.com\/api\/(v1\/goods\/goodsList|exposureAdvStatistics|getWebAdvList)" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryAdImages" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"https:\/\/yanxuan.nosdn.127.net\/.*\.mp4" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/tag\/ads_engage" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/ads\/apple\/record" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/ads\/resource" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/referee\.xiaohongshu\.com\/v\d\/stateReport" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/lchttpapi\.xczim\.com\/1\.1\/functions\/getLaunchImageForIOS" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https:\/\/api\.xiachufang\.com\/v\d\/ad/" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+"^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 "^https?:\/\/client-api\.oray\.com\/materials\/SLCC_IOS_STARTUP\?lang=zh-Hans-CN" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/api-weather\.andy\.works\/v\d\/\w{13,18}$" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 
