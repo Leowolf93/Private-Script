@@ -1,6 +1,5 @@
 [Script]
 type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js
-
 [URL Rewrite]
 ^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
 ^https?:\/\/app\.58\.com\/api\/home\/advertising\/ - reject
