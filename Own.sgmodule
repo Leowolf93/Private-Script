@@ -1,3 +1,7 @@
+#!name=去开屏广告
+#!desc=去开屏广告
+#!system=ios
+
 [Script]
 12306去广告 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0,max-size=0
 type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
