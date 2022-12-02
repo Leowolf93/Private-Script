@@ -1,16 +1,12 @@
-#!name=去开屏广告
-#!desc=去开屏广告
-#!system=ios
-
 [Script]
-12306去广告 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0,max-size=0
-type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
-type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
-type=http-response,requires-body=1,max-size=0,pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow,script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
-type=http-response,requires-body=1,max-size=0,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
-type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
-type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
-type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
+12306 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0,max-size=0
+京东1 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js,script-update-interval=0,max-size=0
+京东2 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js,script-update-interval=0,max-size=0
+顺丰 = type=http-response,pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js,script-update-interval=0,max-size=0
+微信 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,script-update-interval=0,max-size=0
+小红书1 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js,script-update-interval=0,max-size=0
+小红书1 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js,script-update-interval=0,max-size=0
+小红书1 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js,script-update-interval=0,max-size=0
 
 [URL Rewrite]
 ^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
