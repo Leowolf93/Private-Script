@@ -20,7 +20,7 @@ DOMAIN-SUFFIX, sdk.open.talk.igexin.com, REJECT
 DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
 
 [URL Rewrite]
-^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\?  - reject
+^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\? - reject
 ^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
 ^https?:\/\/app\.58\.com\/api\/home\/advertising\/ - reject
 ^https?:\/\/gw.aihuishou.com\/app-portal\/home\/getadvertisement - reject
