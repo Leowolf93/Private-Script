@@ -20,8 +20,7 @@ DOMAIN-SUFFIX, sdk.open.talk.igexin.com, REJECT
 DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
 
 [URL Rewrite]
-^https?:\/\/capis(-\d)?\.didapinche\.com\/ad\/ - reject
-^https?:\/\/capis(-?\w*)?\.didapinche\.com\/publish\/api\/upgrade - reject
+^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\?  - reject
 ^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
 ^https?:\/\/app\.58\.com\/api\/home\/advertising\/ - reject
 ^https?:\/\/gw.aihuishou.com\/app-portal\/home\/getadvertisement - reject
@@ -41,7 +40,6 @@ DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
 ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig - reject
 ^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v\d - reject
 ^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ - reject
-^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\? - reject
 https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) - reject
 ^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd - reject
 ^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo - reject
@@ -204,7 +202,6 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser - reject
 https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex) - reject
 
 [Map Local]
-"^https?+:\/\/www\.didapinche\.com\/app\/adstat\/" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/wcprd\.hilton\.com\.cn\/app-middleware\/graphql\?type=splashAd" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/hcz-member\.pingan\.com\.cn\/micro-api\/homepage\/do\/app\/popbox\/getTopPopBox" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
