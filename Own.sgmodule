@@ -1,5 +1,5 @@
-#!name=自用去app广告
-#!desc=自用去app广告
+#!name=@@@@自用去app广告@@@@
+#!desc=@@@@自用去app广告@@@@
 [Script]
 12306 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0,max-size=0
 京东1 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js,script-update-interval=0,max-size=0
