@@ -206,6 +206,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser - reject
 https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex) - reject
 
 [Map Local]
+"^https://adui.tg.meitu.com/lua/advertv4/async_load.json" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/gha\.ghac\.cn\:8081\/base\/app\/api\/ad\/query\?adType" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/iobs\.pingan\.com\.cn\/download\/bweb-per-sf-prd\/bweb" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/YourSystemName" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
