@@ -21,6 +21,7 @@ DOMAIN-SUFFIX, sdk.open.talk.igexin.com, REJECT
 DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
 
 [URL Rewrite]
+^https?:\/\/mea\.meitudata\.com\/kaiping - reject
 ^https://rescdn.qqmail.com/qqmail/images/umagreeting_startupscreen_\w+.(png|jpg|mp4) - reject
 ^https?:\/\/(cain-api\.gameyw\.netease\.com)\/cain\/app\/queryImages\?imageType=0&platform=1 - reject
 ^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\? - reject
