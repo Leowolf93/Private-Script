@@ -21,6 +21,10 @@ DOMAIN-SUFFIX, sdk.open.talk.igexin.com, REJECT
 DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
 
 [URL Rewrite]
+^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? - reject
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ - reject
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ - reject
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_1\d{3},h_2\d{3}\/format,webp\/ - reject
 ^https?:\/\/mea\.meitudata\.com\/kaiping - reject
 ^https://rescdn.qqmail.com/qqmail/images/umagreeting_startupscreen_\w+.(png|jpg|mp4) - reject
 ^https?:\/\/(cain-api\.gameyw\.netease\.com)\/cain\/app\/queryImages\?imageType=0&platform=1 - reject
@@ -206,6 +210,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser - reject
 https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex) - reject
 
 [Map Local]
+"^https?:\/\/elemecdn\.com\/.+?\/sitemap" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.png"
 "^https:\/\/adui\.tg\.meitu\.com\/lua\/advertv4\/sync_load\.json$" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 "^https?:\/\/gha\.ghac\.cn\:8081\/base\/app\/api\/ad\/query\?adType" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https?:\/\/iobs\.pingan\.com\.cn\/download\/bweb-per-sf-prd\/bweb" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
