@@ -21,6 +21,7 @@ Keep = http-response,pattern=^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people
 微博7 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/search/(finder|container_timeline|container_discover),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js,script-update-interval=0,max-size=0
 微博8 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js,script-update-interval=0,max-size=0
 微博9 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js,script-update-interval=0,max-size=0
+微博10 = type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js,script-update-interval=0,max-size=0
 
 [Rule]
 DOMAIN-KEYWORD, cm-10-134.getui.com, REJECT
