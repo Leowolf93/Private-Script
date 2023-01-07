@@ -50,7 +50,7 @@ DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
 ^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json - reject
 ^https?:\/\/res\.pizzahut\.com\.cn\/CRM\/phad\/apphome\/apphome - reject
 ^https?:\/\/apps\.api\.ke\.com\/config\/config\/(bootpage|getactivityconfig) - reject
-^https?:\/\/js-ad\.ayximgs\.com\.ad-universe-cdn\.hzhcbkj\.cn\/xgapp\.php\/v2\/top_notice
+^https?:\/\/js-ad\.ayximgs\.com\.ad-universe-cdn\.hzhcbkj\.cn\/xgapp\.php\/v2\/top_notice - reject
 ^https?:\/\/cdn\.\w{3}\.chelaileapp\.cn\/(api\/)?adpub - reject
 ^https?:\/\/api.chelaile.net.cn\/adpub\/ - reject
 ^https?:\/\/api.chelaile.net.cn\/goocity\/advert\/ - reject
