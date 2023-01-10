@@ -307,6 +307,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do - reject
 
 
 [Map Local]
+^https:\/\/mlol\.qt\.qq\.com\/go\/recommend data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 ^https?:\/\/.+\/cdn\/qiyiapp\/\d{8}\/.+&dis_dz= data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/.+\/cdn\/qiyiapp\/\d{8}\/.+&z=\w data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/fusion_switch data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
