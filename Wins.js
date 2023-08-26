@@ -1,7 +1,5 @@
-let obj = JSON.parse($response.body);
-
-if (obj && obj.response && obj.response.trial) {
-    obj.response.trial.duration = 9999;
-}
-
-$done({body: JSON.stringify(obj)});
+var body = $response.body;
+var obj = JSON.parse(body);
+obj.response.trial.duration = 99;
+body = JSON.stringify(obj);
+$done({body});
