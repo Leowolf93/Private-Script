@@ -1,13 +1,5 @@
 let obj = JSON.parse($response.body);
-let decodedRequestBody = decodeURIComponent($request.body);
-let pairs = decodedRequestBody.split("&");
-let params = {};
-for (let pair of pairs) {
-    let [key, value] = pair.split("=");
-    params[key] = value;
-}
-let productId = params["product_id"];
-obj.response.product_id = productId;
+obj.response.product_id = "781505";
 obj.response.activation_id = "admin";
 obj.response.type = "personal";
 obj.response.expires = 1;
