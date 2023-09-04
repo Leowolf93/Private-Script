@@ -1,9 +1,12 @@
 let obj = JSON.parse($response.body);
 obj = {
   "success": true,
-  "data": {
-    "message": "success",
-    "code": 200
-  }
+    "response": {
+        "product_id": "583749",
+        "activation_id": "99567@qq.com",
+        "type": "personal",
+        "expires": 1,
+        "expiry_date": 1999999999999
+    }
 };    
 $done({body: JSON.stringify(obj)});
