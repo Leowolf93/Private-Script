@@ -16,7 +16,7 @@ let paddleActivate = () => {
                 success: true,
                 response: {
                     product_id: product_id,
-                    activation_id: "QiuChenly",
+                    activation_id: "LeoWolf",
                     type: "personal",
                     expires: 1,
                     expiry_date: 1999999999999,
@@ -46,7 +46,7 @@ let paddleVerify = () => {
 let elpassManagement = () => {
     if (url !== "https://api.elpass.app/device/management") return;
     let body = JSON.stringify({
-        "email": "QiuChenly@52pojie.com",
+        "email": "99567@qq.com",
         "subscriptionBillingPeriod": null,
         "subscriptionEndDate": 99999502400,
         "subscriptionSource": null,
