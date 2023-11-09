@@ -16,7 +16,7 @@ let paddleReset = () => {
                 success: true,
                 response: {
                        trial: {
-                            duration: 99999
+                            duration: 7
                         }
                 },
             }),
