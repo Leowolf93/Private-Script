@@ -62,30 +62,43 @@ let verifyPaddle = () => {
     if (userAgent.includes("Downie") || userAgent.includes("Permute")) {
         console.log("Downie/Permute 验证函数");
         $done({
-            success: true,
-            signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
-             response: {
-                product_id: product_id,
-                "allowed_uses": "3",
-                "times_used": "1",
-                "type": "activation_license",
-                "expires": false,
-                "expiry_date": null
-            },
-        });       
+            response: {
+                body: JSON.stringify({
+                    success: true,
+                    signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
+                    response: {
+                        product_id: product_id,
+                        "allowed_uses": "3",
+                        "times_used": "1",
+                        "type": "activation_license",
+                        "expires": false,
+                        "expiry_date": null
+                    },
+                }),
+            }
+        });
     } else {
         console.log("普通软件 验证函数");
-         $done({
-            success: true,
-            signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
-             response: {
-                type: "personal",
-                expires: 1,
-                expiry_date: 1999999999999,
-            },
-        }); 
+        $done({
+            response: {
+                body: JSON.stringify({
+                    success: true,
+                    signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
+                    response: {
+                        product_id: product_id,
+                        type: "personal",
+                        expires: 1,
+                        expiry_date: 1999999999999,
+                    },
+                },
+            }),
     }
-};
+    }
+)
+    ;
+}
+}
+;
 
 activePaddle();
 verifyPaddle();
