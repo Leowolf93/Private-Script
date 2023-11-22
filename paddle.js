@@ -19,13 +19,13 @@ let activePaddle = () => {
                     signature: "nxeFmGFY3Ylt3+izblc96zYTSTvFgtOhLIQ86WH9m3s=",
                     response: {
                         product_id: product_id,
-                        "times_used": "0",
-                        "expiry_date": null,
-                        "user_id": "81948133",
-                        "allowed_uses": "3",
-                        "type": "activation_license",
-                        "activation_id": "5351935",
-                        "expires": false
+                        times_used: "0",
+                        expiry_date: null,
+                        user_id: "81948133",
+                        allowed_uses: "3",
+                        type: "activation_license",
+                        activation_id: "5351935",
+                        expires: false
                     },
                 }),
             },
@@ -35,8 +35,7 @@ let activePaddle = () => {
         $done({
             response: {
                 body: JSON.stringify({
-                    success: true,
-                    response: {
+                    success: true, response: {
                         product_id: product_id,
                         activation_id: "99567@qq.com",
                         type: "personal",
@@ -68,11 +67,11 @@ let verifyPaddle = () => {
                     signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
                     response: {
                         product_id: product_id,
-                        "allowed_uses": "3",
-                        "times_used": "1",
-                        "type": "activation_license",
-                        "expires": false,
-                        "expiry_date": null
+                        allowed_uses: "3",
+                        times_used: "1",
+                        type: "activation_license",
+                        expires: false,
+                        expiry_date: null
                     },
                 }),
             }
@@ -90,15 +89,12 @@ let verifyPaddle = () => {
                         expires: 1,
                         expiry_date: 1999999999999,
                     },
-                },
-            }),
+                }),
+            }
+        });
     }
-    }
-)
-    ;
 }
-}
-;
+
 
 activePaddle();
 verifyPaddle();
