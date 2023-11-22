@@ -51,6 +51,7 @@ let charlieVerify = () => {
     }
     let bd = JSON.stringify({
         success: true,
+        signature : "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
         response: {
             product_id: product_id,
             "allowed_uses": "3",
