@@ -61,10 +61,10 @@ let verifyPaddle = () => {
     }
     if (userAgent.includes("Downie") || userAgent.includes("Permute")) {
         console.log("Downie/Permute 验证函数");
-        let bd = JSON.stringify({
+        $done({
             success: true,
             signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
-            response: {
+             response: {
                 product_id: product_id,
                 "allowed_uses": "3",
                 "times_used": "1",
@@ -72,27 +72,18 @@ let verifyPaddle = () => {
                 "expires": false,
                 "expiry_date": null
             },
-        });
-        $done({
-            response: {
-                bd,
-            },
-        });
+        });       
     } else {
         console.log("普通软件 验证函数");
-        let bd = JSON.stringify({
+         $done({
             success: true,
-            response: {
+            signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
+             response: {
                 type: "personal",
                 expires: 1,
                 expiry_date: 1999999999999,
             },
-        });
-        $done({
-            response: {
-                bd,
-            },
-        });
+        }); 
     }
 };
 
