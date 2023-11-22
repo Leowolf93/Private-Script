@@ -38,7 +38,7 @@ let paddleVerify = () => {
             product_id = k.split("=")[1];
         }
     }
-    let body = JSON.stringify({
+    let bd = JSON.stringify({
         success: true,
         response: {
             product_id: product_id,
@@ -51,7 +51,7 @@ let paddleVerify = () => {
     });
     $done({
         response: {
-            body,
+            bd,
         },
     });
 };
