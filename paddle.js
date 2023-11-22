@@ -11,6 +11,7 @@ let activePaddle = () => {
         }
     }
     if (userAgent.includes("Downie") || userAgent.includes("Permute")) {
+        console.log("Downie/Permute 激活函数");
         $done({
             response: {
                 body: JSON.stringify({
@@ -30,6 +31,7 @@ let activePaddle = () => {
             },
         });
     } else {
+        console.log("普通软件 激活函数");
         $done({
             response: {
                 body: JSON.stringify({
@@ -58,6 +60,7 @@ let verifyPaddle = () => {
         }
     }
     if (userAgent.includes("Downie") || userAgent.includes("Permute")) {
+        console.log("Downie/Permute 验证函数");
         let bd = JSON.stringify({
             success: true,
             signature: "tR\/ThldszXvkuC2gIVu7mV3H1apFebP5Ne8gyrk8py0=",
@@ -76,6 +79,7 @@ let verifyPaddle = () => {
             },
         });
     } else {
+        console.log("普通软件 验证函数");
         let bd = JSON.stringify({
             success: true,
             response: {
