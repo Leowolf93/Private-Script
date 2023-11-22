@@ -16,10 +16,13 @@ let paddleActivate = () => {
                 success: true,
                 response: {
                     product_id: product_id,
-                    activation_id: "LeoWolf",
-                    type: "personal",
-                    expires: 1,
-                    expiry_date: 1999999999999,
+                    "times_used": "0",
+                    "expiry_date": null,
+                    "user_id": "81948133",
+                    "allowed_uses": "3",
+                    "type": "activation_license",
+                    "activation_id": "5351935",
+                    "expires": false
                 },
             }),
         },
@@ -28,60 +31,23 @@ let paddleActivate = () => {
 
 let paddleVerify = () => {
     if (url !== "https://v3.paddleapi.com/3.2/license/verify") return;
+    let body = $request.body.split("&");
+    let product_id = "";
+    for (let k of body) {
+        if (k.indexOf("product_id") != -1) {
+            product_id = k.split("=")[1];
+        }
+    }
     let body = JSON.stringify({
         success: true,
         response: {
-            type: "personal",
-            expires: 1,
-            expiry_date: 1999999999999,
+            product_id: product_id,
+            "allowed_uses": "3",
+            "times_used": "1",
+            "type": "activation_license",
+            "expires": false,
+            "expiry_date": null
         },
-    });
-    $done({
-        response: {
-            body,
-        },
-    });
-};
-
-let elpassManagement = () => {
-    if (url !== "https://api.elpass.app/device/management") return;
-    let body = JSON.stringify({
-        "email": "99567@qq.com",
-        "subscriptionBillingPeriod": null,
-        "subscriptionEndDate": 99999502400,
-        "subscriptionSource": null,
-        "autoRenew": true,
-        "trial": false
-    });
-    $done({
-        response: {
-            body,
-        },
-    });
-};
-
-let elpassInit = () => {
-    if (url !== "https://api.elpass.app/device/init") return;
-    let body = JSON.stringify({
-        "code": 0,
-        "subscriptionBillingPeriod": null,
-        "subscriptionEndDate": 99999502400, //5100年授权
-        "subscriptionSource": null,
-        "autoRenew": true,
-        "trial": false
-    });
-    $done({
-        response: {
-            body,
-        },
-    });
-};
-
-let elpassActiveWithKey = () => {
-    if (url !== "https://api.elpass.app/device/activate-with-key") return;
-    let body = JSON.stringify({
-        "code": 0,
-        "license": "没有密钥 这个注入伪造信息是没有用的"
     });
     $done({
         response: {
@@ -92,8 +58,3 @@ let elpassActiveWithKey = () => {
 
 paddleActivate();
 paddleVerify();
-
-//这里可以用通用有效授权信息伪造下发即可伪造出真实激活状态
-elpassManagement();
-elpassInit();
-elpassActiveWithKey();
