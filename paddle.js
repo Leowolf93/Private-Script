@@ -4,9 +4,11 @@ let charlieActive = () => {
     if (url !== "https://v3.paddleapi.com/3.2/license/activate") return;
     let userAgent = $request.headers['user-agent'];
     console.log(userAgent);
+    console.log(!userAgent.includes("Downie") || !userAgent.includes("Permute"));
     if (!userAgent.includes("Downie") || !userAgent.includes("Permute")) {
         return; // 如果不包含 "Downie" 或 "Permute"，则退出函数
     }
+    console.log("Permute或者Downie激活");
     let body = $request.body.split("&");
     let product_id = "";
     for (let k of body) {
@@ -39,9 +41,11 @@ let charlieVerify = () => {
     if (url !== "https://v3.paddleapi.com/3.2/license/verify") return;
     let userAgent = $request.headers['user-agent'];
     console.log(userAgent);
+    console.log(!userAgent.includes("Downie") || !userAgent.includes("Permute"));
     if (!userAgent.includes("Downie") || !userAgent.includes("Permute")) {
         return; // 如果不包含 "Downie" 或 "Permute"，则退出函数
     }
+    console.log("Permute或者Downie验证");
     let body = $request.body.split("&");
     let product_id = "";
     for (let k of body) {
@@ -76,7 +80,7 @@ let paddleActivate = () => {
             product_id = k.split("=")[1];
         }
     }
-
+    console.log("普通激活函数");
     $done({
         response: {
             body: JSON.stringify({
@@ -103,6 +107,7 @@ let paddleVerify = () => {
             expiry_date: 1999999999999,
         },
     });
+    console.log("普通验证函数");
     $done({
         response: {
             body,
