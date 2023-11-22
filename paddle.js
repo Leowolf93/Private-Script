@@ -2,7 +2,8 @@ let url = $request.url;
 
 let charlieActive = () => {
     if (url !== "https://v3.paddleapi.com/3.2/license/activate") return;
-    let userAgent = $request.headers['User-Agent'];
+    let userAgent = $request.headers['user-agent'];
+    console.log(userAgent);
     if (!userAgent.includes("Downie") || !userAgent.includes("Permute")) {
         return; // 如果不包含 "Downie" 或 "Permute"，则退出函数
     }
@@ -36,7 +37,8 @@ let charlieActive = () => {
 
 let charlieVerify = () => {
     if (url !== "https://v3.paddleapi.com/3.2/license/verify") return;
-    let userAgent = $request.headers['User-Agent'];
+    let userAgent = $request.headers['user-agent'];
+    console.log(userAgent);
     if (!userAgent.includes("Downie") || !userAgent.includes("Permute")) {
         return; // 如果不包含 "Downie" 或 "Permute"，则退出函数
     }
