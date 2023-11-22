@@ -14,6 +14,7 @@ let paddleActivate = () => {
         response: {
             body: JSON.stringify({
                 success: true,
+                signature : "nxeFmGFY3Ylt3+izblc96zYTSTvFgtOhLIQ86WH9m3s=",
                 response: {
                     product_id: product_id,
                     "times_used": "0",
