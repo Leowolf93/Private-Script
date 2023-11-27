@@ -35,6 +35,7 @@ let activePaddle = () => {
             response: {
                 body: JSON.stringify({
                     success: true, 
+                    "success_code": 0,
                     response: {
                         product_id: product_id,
                         activation_id: "99567@qq.com",
