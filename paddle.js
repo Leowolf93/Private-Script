@@ -10,7 +10,7 @@ let activePaddle = () => {
             product_id = k.split("=")[1];
         }
     }
-    if (userAgent.includes("Downie") || userAgent.includes("Permute")) {
+    if (userAgent.includes("Downie") || userAgent.includes("Permute") || userAgent.includes("BetterDisplay")) {
         console.log("Downie/Permute 激活函数");
         $done({
             response: {
@@ -58,7 +58,7 @@ let verifyPaddle = () => {
             product_id = k.split("=")[1];
         }
     }
-    if (userAgent.includes("Downie") || userAgent.includes("Permute")) {
+    if (userAgent.includes("Downie") || userAgent.includes("Permute") || userAgent.includes("BetterDisplay")) {
         console.log("Downie/Permute 验证函数");
         $done({
             response: {
